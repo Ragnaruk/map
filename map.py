@@ -34,7 +34,7 @@ def get_locations():
                 try:
                     locations[city[1]] = geolocator.geocode(city[1], timeout=10).raw['location']
                 except AttributeError:
-                    print("Unknown city {0}".format(city[1]))
+                    print("Unknown {0} city".format(city[1]))
                     unknown_cities += 1
                     continue
 
